@@ -10,7 +10,7 @@
   
 body {
     gap: 0.5em;
-    background-image: url("images_01/bkg_09.jpg");
+    background-image: url("/images_01/bkg_09.jpg");
     background-color: #707070;
     background-repeat: no-repeat;
     background-attachment: fixed;
