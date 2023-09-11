@@ -1,0 +1,103 @@
+/* ------------------------------------ STATIC PROPERTIES */
+
+#navigation-panel .n01 {
+  background: #a11010;
+  color: #ffffff;
+}
+
+section {
+  padding: 0.5rem;
+  gap: 0.5rem;
+}
+
+section .vstack {
+  gap: 0.2rem;
+}
+
+.vtext {
+  writing-mode: sideways-lr;
+  text-orientation: sideways;
+  text-align: center;
+  padding: 0.4rem;
+  background: #8b1313;
+  color: rgb(255, 244, 244);
+  border: 2px solid rgb(0, 0, 0);
+}
+
+/* ------------------------------------ DROPDOWN MENU -----------------------------------*/
+
+/* Dropdown container */
+.dropdown {
+  display: flex;
+  position: relative;
+}
+
+/* Main button */
+.dropbtn {
+  display: flex;
+  width: 30rem;
+  padding: 0.3rem 0.3rem;
+  padding-left: 0.5rem;
+  color: white;
+  background-color: #8b131383;
+  border: 2px solid rgb(0, 0, 0);
+  cursor: pointer;
+  transition: 0.1s ease-out;
+  white-space: nowrap;
+}
+  
+  /* Dropdown content */
+.dropdown .dropdown-content {
+  display: inline-flex;
+  position: absolute;
+  /* top: 1.95rem; */
+  left: 16rem;
+  background-color: #8b1313;
+  box-shadow: 0px 10px 10px #000000;
+  z-index: 1000;
+  visibility: hidden;
+  opacity: 0;
+  transition: 0.1s ease-out;
+}
+
+  .dropdown-content a {
+  color: rgb(255, 255, 255);
+  padding: 0.1rem 0.2rem;
+  display: block;
+  text-align: center;
+  border: 2px solid rgb(0, 0, 0);
+  border-top: 0px;
+  transition: 0.1s ease-out;
+  width: 4rem;
+}
+
+.dropdown-content a:hover {
+  background-color: #c9c6c6;
+}
+  
+/* show dropdown content */
+.dropdown:focus .dropdown-content {
+  transform: translateY(1.95rem);
+  visibility: visible;
+  opacity: 1;
+}
+
+.dropdown:focus .dropbtn {background-color: #8b1313;}
+.dropbtn:hover {background-color: #bd4040;}
+.dropdown:focus .db2 {display: inline-block;}
+  
+/* mask to close menu by clicking on the button */
+.dropdown .db2 {
+  position: absolute;
+  display: none;
+  top: 0; right: 0; bottom: 0; left: 0; opacity: 0;
+  cursor: pointer;
+  z-index: 10;
+}
+
+.dropdown .db2:focus .dropdown-content {
+  outline: none;
+  visibility: hidden;
+  opacity: 0;
+}
+
