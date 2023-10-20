@@ -50,10 +50,10 @@ section .vstack {
 .dropdown .dropdown-content {
   display: inline-flex;
   position: absolute;
-  /* top: 1.95rem; */
+  top: 1.95rem;
   left: 16rem;
   background-color: #8b1313;
-  box-shadow: 0px 10px 10px #000000;
+  box-shadow: 0px 10px 10px #0000007a;
   z-index: 1000;
   visibility: hidden;
   opacity: 0;
@@ -77,7 +77,7 @@ section .vstack {
   
 /* show dropdown content */
 .dropdown:focus .dropdown-content {
-  transform: translateY(1.95rem);
+  /* transform: translateY(1.95rem); */
   visibility: visible;
   opacity: 1;
 }
