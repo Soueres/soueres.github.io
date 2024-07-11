@@ -1,6 +1,7 @@
 * {
     font-family: "bahnschrift";
-    /* outline: solid; */
+    /*outline: solid;
+    margin: 5px;*/
 }
 
 ::selection {
@@ -10,7 +11,7 @@
   
 body {
     gap: 0.5em;
-    background-image: url("images_01/bkg_09.jpg");
+    background-image: url("images_01/bkg_094.jpg");
     background-color: #707070;
     background-repeat: no-repeat;
     background-attachment: fixed;
@@ -32,7 +33,7 @@ header {gap: 0.5em;}
     padding: 1rem;
     border: 2px solid rgb(0, 0, 0);
     border-radius: 0em 5em 0em 0em;
-    backdrop-filter: blur(20px);
+    backdrop-filter: blur(5px);
     width: 68.8rem;
     min-width: 27rem;
 }
@@ -48,7 +49,7 @@ header {gap: 0.5em;}
 #left_header {
     border: 2px solid rgb(0, 0, 0);
     border-radius: 10% 0% 0% 40%;
-    backdrop-filter: blur(20px);
+    backdrop-filter: blur(0px);
 }
 
 #logo:hover {
@@ -82,13 +83,20 @@ main {
     flex-shrink: 0;
     border: 2px solid rgb(0, 0, 0);
     border-radius: 2em 0em 0em 0em;
-    backdrop-filter: blur(20px);
+    backdrop-filter: blur(5px);
 }
+
+/*@media screen and (max-width: 1000px) {
+    #navigation-panel, #main {
+        width: 100%; /* The width is 100%, when the viewport is 800px or smaller */
+    }
+}*/
 
 #navigation-panel .button {
     border: 2px solid rgb(0, 0, 0);
     border-radius: 0.2em;
     padding: 0.3rem 0.3rem 0.3rem 0.6rem;
+    backdrop-filter: blur(20px);
 }
 
 #navigation-panel .n01 {
@@ -106,6 +114,11 @@ section {
 }
 
 #nav-main {gap: 0.5em;}
+
+/*#nav-main .nav {}*/
+
+/*#nav-main .main {}*/
+
 #navigation-panel .button:hover {background-color: #d12b2b;}
 #LW-text {color: #292929;}
 p {text-align: justify;}

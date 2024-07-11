@@ -1,2 +1,9 @@
-let d = new Date();
-document.body.innerHTML = "<h1>Today's date is " + d + "</h1>"
+window.onresize = displayWindowSize;
+window.onload = displayWindowSize;
+
+function displayWindowSize() {
+    myWidth = window.innerWidth;
+    myHeight = window.innerHeight;
+    document.getElementById("top_info").style["margin-top"] = "0px";
+    document.getElementById("top_info").innerHTML = "Width : " + myWidth + " Height : " + myHeight
+};
