@@ -86,11 +86,12 @@ main {
     backdrop-filter: blur(5px);
 }
 
-/*@media screen and (max-width: 1000px) {
+/* The following code sets the width at 100% when the viewport is 1000px or smaller */
+/* @media screen and (max-width: 1000px) {
     #navigation-panel, #main {
-        width: 100%; /* The width is 100%, when the viewport is 800px or smaller */
+        width: 100%; 
     }
-}*/
+} */
 
 #navigation-panel .button {
     border: 2px solid rgb(0, 0, 0);
@@ -114,10 +115,6 @@ section {
 }
 
 #nav-main {gap: 0.5em;}
-
-/*#nav-main .nav {}*/
-
-/*#nav-main .main {}*/
 
 #navigation-panel .button:hover {background-color: #d12b2b;}
 #LW-text {color: #292929;}
