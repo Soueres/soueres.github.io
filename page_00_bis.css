@@ -1,8 +1,15 @@
 * {
     font-family: "bahnschrift";
     outline: 1px solid;
-    margin: 5px;
+    /* margin: 5px; */
 }
+
+/* ALL ROWS ARE FLEX-CONTAINERS */
+.row {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
 
 ::selection {
     color: rgb(160, 0, 0);
@@ -16,14 +23,8 @@ body {
     background-size: cover;
 }
 
-.row {
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-  }
-  
-.col {
-flex-basis: 100%;
+p {
+    text-align: justify;
 }
 
 .nowrap {
@@ -50,22 +51,59 @@ flex-basis: 100%;
     margin-bottom: -0.3em;
 }
 
-#nav-panel {
-    flex-basis: 10em;
-    flex-grow: 0;
-    flex-shrink: 0;
-}
-
+/* WHEN THE SCREEN IS LARGE */
 @media screen and (min-width: 700px) {
-    .col {
-        flex: 1;
+    main {
+        /* the text fits into the right part of the screen no matter how thin */
+        flex-basis: 0%;
+        flex-grow: 1;
+        flex-shrink: 1;
+    }
+    nav {
+        /* the navigation panel stays at a width of 10em*/
+        flex-basis: 10em;
+        flex-grow: 0;
+        flex-shrink: 0;
     }
 }
 
+/* WHEN THE SCREEN IS NARROW */
 @media screen and (max-width: 700px) {
-    #nav-panel {
+    nav {
+        /* The navigation pannel now occupies 100% of the width (and the main goes below) */
+        flex-basis: 100%;
+        flex-grow: 1;
+    }
+    
+    #nav-id {
+        /* The navigation panel is now a flexbox container */
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-between;
+    }
+
+    nav a {
+        /* Size and behaviour of the items in the flexbox container */
         flex-basis: 10em;
         flex-grow: 1;
         flex-shrink: 0;
     }
+}
+
+/* GENERAL STYLE AND BOXES */
+
+h1, h2, h3, h4 {
+    margin: 0rem;
+    padding: 0rem;
+}
+
+#title-box {
+    margin: 0rem;
+    padding: 0rem;
+    padding-left: 0.5rem;
+}
+#title-box #page-title, #title-box #page-subtitle {
+    margin-right: 0.3rem;
+    margin-bottom: 0.5rem;
 }
