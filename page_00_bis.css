@@ -64,6 +64,7 @@ p {
         flex-basis: 10em;
         flex-grow: 0;
         flex-shrink: 0;
+        padding: 0.5rem;
     }
 }
 
@@ -73,6 +74,8 @@ p {
         /* The navigation pannel now occupies 100% of the width (and the main goes below) */
         flex-basis: 100%;
         flex-grow: 1;
+        gap: 0.5rem;
+        padding: 0.5rem;
     }
     
     #nav-id {
@@ -103,6 +106,7 @@ h1, h2, h3, h4 {
     padding: 0rem;
     padding-left: 0.5rem;
 }
+
 #title-box #page-title, #title-box #page-subtitle {
     margin-right: 0.3rem;
     margin-bottom: 0.5rem;
