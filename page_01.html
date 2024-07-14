@@ -2,50 +2,56 @@
 <html lang="fr">
     <head>
         <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.2">
         <title> Physique-Chimie PT </title>
         <link rel="stylesheet" href="page_00.css">
         <link rel="stylesheet" href="page_01.css">
     </head>
 
-    <body class="vstack">
-        <header class="hstack jst_st">
+    <body class="col">
+        <script src="scripts/script_test.js"></script>
+        <div id="top_info"> This text will be replaced by the script output </div>
 
-            <a id="left_header" href="index.html"> <img id="logo" src="images_01/Logo_LW.png" /> </a>
-            
-            <div class="vstack jst_st" id="right_header">
-                <div class="hstack wrap aln_bas">
-                    <h1> PHYSIQUE-CHIMIE, PT </h1>
-                    <a href="https://prepas.org/index.php?document=96"> (lien vers le programme officiel) </a>
+        <header class="row nowrap" id="header-id">
+            <div class="col" id="logo-box">
+                <a href="index.html"> 
+                    <img id="logo" src="images_01/Logo_LW.png" />
+                </a>
+            </div>
+            <div class="col" id="title-box">
+                <div class="row baseline">
+                    <h1 class="col nowrap-text" id="page-title"> PHYSIQUE-CHIMIE, PT </h1>
+                    <a class="col nowrap-text" href="https://prepas.org/index.php?document=96"> (lien vers le programme officiel) </a>
                 </div>
 
-                <div class="hstack wrap aln_bas">
-                    <h2> Lycée Langevin-Wallon </h2>
-                    <a href="https://www.lycee-langevin-wallon.com/">  (lien vers le site du lycée) </a>
+                <div class="row baseline">
+                    <h2 class="col nowrap-text" id="page-subtitle"> Lycée Langevin-Wallon </h2>
+                    <a class="col nowrap-text" href="https://www.lycee-langevin-wallon.com/"> (lien vers le site du lycée) </a>
                 </div>
 
-                <div>
-                    <h4> <a href="https://fr.linkedin.com/in/bertrand-soueres"> Bertrand Souères </a> </h4>
+                <div class="row">
+                    <a class="nowrap-text" href="https://fr.linkedin.com/in/bertrand-soueres"> Bertrand Souères </a>
                 </div>
             </div>
         </header>
 
-        <div class="hstack" id="nav-main">
-            <nav id="navigation-panel" class="vstack">
-                <a class="button n01" href="page_01.html"> Cours / TDs </a>
-                <a class="button n02" href="page_02.html"> TPs / TIPE </a>
-                <a class="button n03" href="page_03.html"> Evaluations </a>
-                <a class="button n04" href="page_04.html"> Info. concours </a>
-                <a class="button n05" href="page_05.html"> Logiciels </a>
+        <div class="row" id="nav-main">
+            <nav class="col" id="nav-id">
+                <a class="row nav-button b01" href="page_01.html"> Cours / TDs </a>
+                <a class="row nav-button b02" href="page_02.html"> TPs / TIPE </a>
+                <a class="row nav-button b03" href="page_03.html"> Evaluations </a>
+                <a class="row nav-button b04" href="page_04.html"> Info. concours </a>
+                <a class="row nav-button b05" href="page_05.html"> Logiciels </a>
             </nav>
 
-            <main class="vstack">
+            <main class="col" id="main-id">
 
-                <section class="hstack">
-                    <div class="vtext"> 
+                <section class="row nowrap">
+                    <div class="col vtext"> 
                         THERMODYNAMIQUE
                     </div>
             
-                    <div class="vstack jst_st">
+                    <div class="col jst_st">
                         <div class="dropdown" tabindex="1">
                             <i class="db2" tabindex="1"></i>
                             <a class="dropbtn"> Thermodynamique différentielle</a>
@@ -89,12 +95,12 @@
                     </div>
                 </section>
         
-                <section class="hstack">
-                    <div class="vtext"> 
+                <section class="row nowrap">
+                    <div class="col vtext"> 
                         THERMOCHIMIE
                     </div>
         
-                    <div class="vstack jst_st">
+                    <div class="col jst_st">
                         <div class="dropdown" tabindex="1">
                             <i class="db2" tabindex="1"></i>
                             <a class="dropbtn"> Application du premier principe à la réaction chimique </a>
@@ -114,12 +120,12 @@
                     </div>
                 </section>
 
-                <section class="hstack">
-                    <div class="vtext"> 
+                <section class="row nowrap">
+                    <div class="col vtext"> 
                         MÉCA. FLUIDES
                     </div>
         
-                    <div class="vstack jst_st">
+                    <div class="col jst_st">
                         <div class="dropdown" tabindex="1">
                             <i class="db2" tabindex="1"></i>
                             <a class="dropbtn"> Statique des fluides </a>
@@ -140,12 +146,12 @@
                     
                 </section>
 
-                <section class="hstack">
-                    <div class="vtext"> 
+                <section class="row nowrap">
+                    <div class="col vtext"> 
                         ELECTROMAGNETISME
                     </div>
         
-                    <div class="vstack jst_st">
+                    <div class="col jst_st">
 
                         <div class="dropdown" tabindex="1">
                             <i class="db2" tabindex="1"></i>
@@ -191,12 +197,12 @@
 
                 </section>
 
-                <section class="hstack">
-                    <div class="vtext"> 
+                <section class="row nowrap">
+                    <div class="col vtext"> 
                         ELECTROCINETIQUE
                     </div>
         
-                    <div class="vstack jst_st">
+                    <div class="col jst_st">
                         <div class="dropdown" tabindex="1">
                             <i class="db2" tabindex="1"></i>
                             <a class="dropbtn"> Stabilté des systèmes linéaires </a>
@@ -232,12 +238,12 @@
                     </div>
                 </section>
 
-                <section class="hstack">
-                    <div class="vtext"> 
+                <section class="row nowrap">
+                    <div class="col vtext"> 
                         OPTIQUE
                     </div>
         
-                    <div class="vstack jst_st">
+                    <div class="col jst_st">
                         <div class="dropdown" tabindex="1">
                             <i class="db2" tabindex="1"></i>
                             <a class="dropbtn"> Modèle scalaire de la lumière </a>
@@ -265,12 +271,12 @@
                     </div>
                 </section>
 
-                <section class="hstack">
-                    <div class="vtext"> 
+                <section class="row nowrap">
+                    <div class="col vtext"> 
                         ÉLECTROCHIMIE
                     </div>
         
-                    <div class="vstack jst_st">
+                    <div class="col jst_st">
                         <div class="dropdown" tabindex="1">
                             <i class="db2" tabindex="1"></i>
                             <a class="dropbtn"> Cinétique d'oxydoréduction : courbes intensité-potentiel </a>
@@ -302,8 +308,8 @@
 
         </div>
 
-        <footer class="itm_st">
-            Bertrand SOUERES - 2023 - bbbbbbbb@gmail.com
+        <footer>
+            Bertrand SOUERES - 2024 - bbbbbbbb@gmail.com
         </footer>
 
 
