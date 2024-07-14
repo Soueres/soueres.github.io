@@ -9,6 +9,7 @@
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
+    gap: 0.5rem;
   }
 
 ::selection {
@@ -21,6 +22,7 @@ body {
     background-repeat: no-repeat;
     background-attachment: fixed;
     background-size: cover;
+    max-width: 1200px;
 }
 
 .nowrap {
@@ -55,6 +57,7 @@ body {
     align-content: flex-start;
     gap: 0.5rem;
     padding: 0.5rem;
+    /* margin-top: 0.5rem; */
 }
 
 .nav-button {
@@ -70,7 +73,6 @@ main {
         flex-grow: 1;
         flex-shrink: 1;
         padding: 0rem 0rem 0rem 0rem;
-        margin: 0rem;
     }
 
 /* WHEN THE SCREEN IS LARGE */
@@ -94,7 +96,7 @@ main {
 
 /* GENERAL STYLE AND BOXES */
 
-header h1, header h2, header h3, header h4 {
+h1, h2, h3, h4 {
     margin: 0rem;
     padding: 0rem;
     margin-right: 0.3rem;
@@ -135,6 +137,7 @@ a {
     backdrop-filter: blur(5px);
     padding: 0.5rem;
     /* padding-left: 0.5rem; */
+    flex-grow: 1;
 }
 
 #title-box a, #title-box a {
@@ -153,10 +156,18 @@ a {
     backdrop-filter: blur(5px);
 }
 
+#nav-main {
+    margin-top: 0.5rem;
+}
+
 section {
     border: 1px solid rgb(0, 0, 0);
     backdrop-filter: blur(20px);
     padding: 0.5rem;
+}
+
+#LW-text {
+    margin-top: 0.5rem;
 }
 
 footer {
@@ -164,4 +175,5 @@ footer {
     border-radius: 0em 0em 0em 0em;
     backdrop-filter: blur(20px);
     padding: 0.2rem 0rem 0.2rem 0.5rem;
+    margin-top: 0.5rem;
 }
