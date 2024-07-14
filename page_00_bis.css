@@ -51,8 +51,25 @@ p {
     margin-bottom: -0.3em;
 }
 
+#nav-id {
+    /* The navigation panel is a flexbox container (even if it is a column) */
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-content: flex-start;
+    gap: 0.5rem;
+    padding: 0.5rem;
+}
+
+nav a {
+    /* Size and behaviour of the items in the flexbox container */
+    flex-basis: 7em;
+    flex-grow: 1;
+    flex-shrink: 0;
+}
+
 /* WHEN THE SCREEN IS LARGE */
-@media screen and (min-width: 700px) {
+@media screen and (min-width: 600px) {
     main {
         /* the text fits into the right part of the screen no matter how thin */
         flex-basis: 0%;
@@ -61,37 +78,19 @@ p {
     }
     nav {
         /* the navigation panel stays at a width of 10em*/
-        flex-basis: 10em;
+        flex-basis: 7em;
         flex-grow: 0;
         flex-shrink: 0;
-        padding: 0.5rem;
     }
 }
 
 /* WHEN THE SCREEN IS NARROW */
-@media screen and (max-width: 700px) {
+@media screen and (max-width: 600px) {
     nav {
         /* The navigation pannel now occupies 100% of the width (and the main goes below) */
         flex-basis: 100%;
         flex-grow: 1;
-        gap: 0.5rem;
-        padding: 0.5rem;
-    }
-    
-    #nav-id {
-        /* The navigation panel is now a flexbox container */
-        display: flex;
-        flex-direction: row;
-        flex-wrap: wrap;
-        justify-content: space-between;
-    }
-
-    nav a {
-        /* Size and behaviour of the items in the flexbox container */
-        flex-basis: 10em;
-        flex-grow: 1;
-        flex-shrink: 0;
-    }
+    }    
 }
 
 /* GENERAL STYLE AND BOXES */
@@ -99,6 +98,7 @@ p {
 h1, h2, h3, h4 {
     margin: 0rem;
     padding: 0rem;
+    margin-right: 0.3rem;
 }
 
 #title-box {
@@ -107,7 +107,6 @@ h1, h2, h3, h4 {
     padding-left: 0.5rem;
 }
 
-#title-box #page-title, #title-box #page-subtitle {
-    margin-right: 0.3rem;
+#title-box a, #title-box a {
     margin-bottom: 0.5rem;
 }
