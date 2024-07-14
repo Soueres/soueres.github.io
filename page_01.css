@@ -1,9 +1,16 @@
-/* ------------------------------------ STATIC PROPERTIES */
+/* ------------------------------------ MAIN PROPERTIES */
+* {
+  font-family: "bahnschrift";
+  outline: 1px solid;
+  /* margin: 5px; */
+}
 
 #nav-id .b01 {
   background: #a11010;
   color: #ffffff;
 }
+
+/* ------------------------------------ CHAPTER LISTS -----------------------------------*/
 
 .vtext {
   writing-mode: sideways-lr;
@@ -15,80 +22,43 @@
   border: 1px solid rgb(0, 0, 0);
 }
 
-/* ------------------------------------ DROPDOWN MENU -----------------------------------*/
-
-/* Dropdown container */
-.dropdown {
+.chap-list {
   display: flex;
-  position: relative;
+  flex-wrap: wrap;
+  flex-direction: row;
+  flex-basis: 100%;
+  gap: 0.3em;
 }
 
-/* Main button */
-.dropbtn {
+.chap-list .row {
   display: flex;
-  width: 30rem;
-  padding: 0.3rem 0.3rem;
+  justify-content: left;
+  align-items: center;
+  flex-basis: 100%;
   padding-left: 0.5rem;
-  color: white;
-  background-color: #8b131383;
-  border: 1px solid rgb(0, 0, 0);
+  padding-right: 0.5rem;
+  justify-content: space-between;
+}
+
+#main-id {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+#main-id section {
+  flex-basis: 30em;
+  flex-grow: 1;
+  flex-shrink: 1;
+}
+
+.chap-list :hover{
   cursor: pointer;
-  transition: 0.1s ease-out;
-  white-space: nowrap;
-}
-  
-  /* Dropdown content */
-.dropdown .dropdown-content {
-  display: inline-flex;
-  position: absolute;
-  top: 1.95rem;
-  left: 16rem;
-  background-color: #8b1313;
-  box-shadow: 0px 10px 10px #0000007a;
-  z-index: 1000;
-  visibility: hidden;
-  opacity: 0;
-  transition: 0.1s ease-out;
+  background-color: #d12b2b;
 }
 
-  .dropdown-content a {
-  color: rgb(255, 255, 255);
-  padding: 0.1rem 0.2rem;
-  display: block;
-  text-align: center;
-  border: 1px solid rgb(0, 0, 0);
-  border-top: 0px;
-  transition: 0.1s ease-out;
-  width: 4rem;
-}
-
-.dropdown-content a:hover {
-  background-color: #c9c6c6;
-}
-  
-/* show dropdown content */
-.dropdown:focus .dropdown-content {
-  /* transform: translateY(1.95rem); */
-  visibility: visible;
-  opacity: 1;
-}
-
-.dropdown:focus .dropbtn {background-color: #8b1313;}
-.dropbtn:hover {background-color: #bd4040;}
-.dropdown:focus .db2 {display: inline-block;}
-  
-/* mask to close menu by clicking on the button */
-.dropdown .db2 {
-  position: absolute;
+.DL-button {
   display: none;
-  top: 0; right: 0; bottom: 0; left: 0; opacity: 0;
-  cursor: pointer;
-  z-index: 10;
 }
 
-.dropdown .db2:focus .dropdown-content {
-  outline: none;
-  visibility: hidden;
-  opacity: 0;
-}
+
 

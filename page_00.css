@@ -108,9 +108,10 @@ main {
     }
     .nav-button {
         flex-basis: 10em;
-        display: block;
-        text-align: center;
         font-size: 18px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
     }
     #header-id {
         font-size: 12px;
@@ -182,7 +183,7 @@ p {
     border: 1px solid rgb(0, 0, 0);
     border-radius: 0.2em;
     padding: 0.3rem 0.3rem 0.3rem 0.6rem;
-    backdrop-filter: blur(5px);
+    backdrop-filter: blur(10px);
 }
 
 section {
