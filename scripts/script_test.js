@@ -13,9 +13,9 @@ function adaptFontSize() {
         elements[i].style.fontSize = newFontSize + "rem";
     } */
 
-    if( myWidth <= 600 ) {
+  /*   if( myWidth <= 600 ) {
         document.getElementById("header-id").style.fontSize = "12px";
     } else if (myWidth > 600) {
         document.getElementById("header-id").style.fontSize = "medium";
-    }
+    } */
 };
