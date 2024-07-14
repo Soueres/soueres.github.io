@@ -9,8 +9,10 @@
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
-    gap: 0.5rem;
-  }
+}
+
+#header-id {gap: 0.5rem;}
+#nav-main {gap: 0.5rem;}
 
 ::selection {
     color: rgb(160, 0, 0);
@@ -25,28 +27,26 @@ body {
     max-width: 1200px;
 }
 
-.nowrap {
-    flex-wrap: nowrap;
-}
+/* ------------------------ SMALL CLASSES --------------------- */
+/* ------------------------ SMALL CLASSES --------------------- */
+/* ------------------------ SMALL CLASSES --------------------- */
+
+.nowrap {flex-wrap: nowrap;}
+.baseline {align-items: baseline;}
 
 .nowrap-text {
     white-space: nowrap;
     overflow: hidden;
 }
 
-.baseline {
-    align-items: baseline;
-}
+
+/* --------------- CRITICAL CLASSES (WITH FLEX PARAMETERS) --------------- */
+/* --------------- CRITICAL CLASSES (WITH FLEX PARAMETERS) --------------- */
+/* --------------- CRITICAL CLASSES (WITH FLEX PARAMETERS) --------------- */
 
 #logo-box {
     flex-basis: fit-content;
     flex-grow: 0;
-}
-
-#logo {
-    width: 9em;
-    padding: 0.5em 0.5em 0.5em 0.5em;
-    /*margin-bottom: -0.3em; */
 }
 
 #nav-id {
@@ -57,7 +57,6 @@ body {
     align-content: flex-start;
     gap: 0.5rem;
     padding: 0.5rem;
-    /* margin-top: 0.5rem; */
 }
 
 .nav-button {
@@ -75,6 +74,9 @@ main {
         padding: 0rem 0rem 0rem 0rem;
     }
 
+/* ---------------------------- SCREEN RESIZING ------------------------- */
+/* ---------------------------- SCREEN RESIZING ------------------------- */
+/* ---------------------------- SCREEN RESIZING ------------------------- */
 /* WHEN THE SCREEN IS LARGE */
 @media screen and (min-width: 600px) {
         nav {
@@ -94,7 +96,24 @@ main {
     }    
 }
 
-/* GENERAL STYLE AND BOXES */
+
+/* ---------------------- PROPERTIES OF CLICKABLE ELEMENTS ---------------------- */
+/* ---------------------- PROPERTIES OF CLICKABLE ELEMENTS ---------------------- */
+/* ---------------------- PROPERTIES OF CLICKABLE ELEMENTS ---------------------- */
+
+a {
+    text-decoration: none;
+    color: #000000;
+}
+
+#logo:hover {filter: drop-shadow(0rem 0rem 0.5rem #000000);}
+#title-box a:hover {filter: drop-shadow(0px 0px 1px #00000081);}
+.nav-button:hover {background-color: #d12b2b;}
+
+
+/* ---------------------- GENERAL AESTHETIC ELEMENTS ---------------------- */
+/* ---------------------- GENERAL AESTHETIC ELEMENTS ---------------------- */
+/* ---------------------- GENERAL AESTHETIC ELEMENTS ---------------------- */
 
 h1, h2, h3, h4 {
     margin: 0rem;
@@ -107,29 +126,12 @@ p {
     margin: 0rem;
 }
 
-/* PROPERTIES OF CLICKABLE ELEMENTS */
-
-#logo:hover {
-    filter: drop-shadow(0rem 0rem 0.5rem #000000);
-}
-
-a {
-    text-decoration: none;
-    color: #000000;
-}
-
-#title-box a:hover {
-    filter: drop-shadow(0px 0px 1px #00000081);
-}
-
 .nav-button {
     border: 1px solid rgb(0, 0, 0);
     border-radius: 0.2em;
     padding: 0.3rem 0.3rem 0.3rem 0.6rem;
     backdrop-filter: blur(5px);
 }
-
-.nav-button:hover {background-color: #d12b2b;}
 
 #title-box {
     border: 1px solid rgb(0, 0, 0);
@@ -146,8 +148,14 @@ a {
 
 #logo-box {
     border: 1px solid rgb(0, 0, 0);
-    /* border-radius: 10% 0% 0% 40%; */
+    border-radius: 0% 0% 0% 39%;
     backdrop-filter: blur(5px);
+}
+
+#logo {
+    width: 9em;
+    padding: 0.5em 0.5em 0.5em 0.5em;
+    margin-bottom: -0.3em; /* corrects a slight vertical offset due to the link inside the image */
 }
 
 #nav-id {
