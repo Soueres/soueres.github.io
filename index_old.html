@@ -4,54 +4,51 @@
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.2">
         <title> Physique-Chimie PT </title>
-        <link rel="stylesheet" href="page_00_bis.css">
+        <link rel="stylesheet" href="page_00.css">
     </head>
 
-    <body class="col">
-
+    <body class="vstack">
         <script src="scripts/script_test.js"></script>
         <div id="top_info"> This text will be replaced by the script output </div>
 
-        <header class="row nowrap" id="header-id">
-            <div class="col" id="logo-box">
-                <a href="index_bis.html"> 
-                    <img id="logo" src="images_01/Logo_LW.png" />
-                </a>
-            </div>
-            <div class="col" id="title-box">
-                <div class="row baseline">
-                    <h1 class="col nowrap-text" id="page-title"> PHYSIQUE-CHIMIE, PT </h1>
-                    <a class="col nowrap-text" href="https://prepas.org/index.php?document=96"> (lien vers le programme officiel) </a>
+        <header class="hstack jst_st">
+
+            <a id="left_header" href="index.html"> <img id="logo" src="images_01/Logo_LW.png" /> </a>
+            
+            <div class="vstack jst_st" id="right_header">
+                <div class="hstack wrap aln_bas">
+                    <h1> PHYSIQUE-CHIMIE, PT </h1>
+                    <a href="https://prepas.org/index.php?document=96"> (lien vers le programme officiel) </a>
                 </div>
 
-                <div class="row baseline">
-                    <h2 class="col nowrap-text" id="page-subtitle"> Lycée Langevin-Wallon </h2>
-                    <a class="col nowrap-text" href="https://www.lycee-langevin-wallon.com/"> (lien vers le site du lycée) </a>
+                <div class="hstack wrap aln_bas">
+                    <h2> Lycée Langevin-Wallon </h2>
+                    <a href="https://www.lycee-langevin-wallon.com/"> (lien vers le site du lycée) </a>
                 </div>
 
-                <div class="row">
-                    <a class="nowrap-text" href="https://fr.linkedin.com/in/bertrand-soueres"> Bertrand Souères </a>
+                <div>
+                    <h4> <a href="https://fr.linkedin.com/in/bertrand-soueres"> Bertrand Souères </a> </h4>
                 </div>
             </div>
         </header>
 
-        <div class="row" id="nav-main">
-            <nav class="col" id="nav-id">
-                <a class="row" href="page_01.html"> Cours / TDs </a>
-                <a class="row" href="page_02.html"> TPs / TIPE </a>
-                <a class="row" href="page_03.html"> Evaluations </a>
-                <a class="row" href="page_04.html"> Info. concours </a>
-                <a class="row" href="page_05.html"> Logiciels </a>
+        <div class="hstack" id="nav-main">
+            <nav id="navigation-panel" class="vstack">
+                <a class="button" id="n01" href="page_01.html"> Cours / TDs </a>
+                <a class="button" id="n02" href="page_02.html"> TPs / TIPE </a>
+                <a class="button" id="n03" href="page_03.html"> Evaluations </a>
+                <a class="button" id="n04" href="page_04.html"> Info. concours </a>
+                <a class="button" id="n05" href="page_05.html"> Logiciels </a>
             </nav>
-    
-            <main class="col" id="main-id">
-                <section class="row">
+
+            <main class="vstack">
+                <section id="intro-text">
                     <p>
                         Ce site s'adresse principalement aux étudiants de la PT du lycée Langevin-Wallon. 
                         Il regroupe un ensemble de documents relatifs aux cours de physique de PT, et de liens en rapport avec le TIPE, les concours, les écoles d'ingénieur, etc.
                     </p>
                 </section>
-                <section class="row">
+                <section id="LW-text">
                     <h3>
                         Extrait de l’introduction du plan Langevin-Wallon, 
                         projet global de réforme de l’enseignement et du système éducatif français (1947)
@@ -81,12 +78,13 @@
                     </p>
                 </section>
             </main>
+
         </div>
-        
-        
-        <footer>
-            Bertrand SOUERES - 2024 - bbbbbbbb@gmail.com
+
+        <footer class="itm_st">
+            Bertrand SOUERES - 2023 - bbbbbbbb@gmail.com
         </footer>
+
 
     </body>
 
