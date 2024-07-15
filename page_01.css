@@ -1,7 +1,7 @@
 /* ------------------------------------ MAIN PROPERTIES */
 * {
   font-family: "bahnschrift";
-  outline: 1px solid;
+  /* outline: 1px solid; */
   /* margin: 5px; */
 }
 
@@ -22,6 +22,18 @@
   border: 1px solid rgb(0, 0, 0);
 }
 
+#main-id {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+}
+
+#main-id section {
+  flex-basis: 30em;
+  flex-grow: 1;
+  flex-shrink: 1;
+}
+
 .chap-list {
   display: flex;
   flex-wrap: wrap;
@@ -31,34 +43,48 @@
 }
 
 .chap-list .row {
+  border: 1px solid rgb(0, 0, 0);
+  margin-left: 0.5rem;
+}
+
+.chap-list .row {
   display: flex;
   justify-content: left;
   align-items: center;
   flex-basis: 100%;
-  padding-left: 0.5rem;
-  padding-right: 0.5rem;
-  justify-content: space-between;
+  padding: 0.3rem;
+  gap: 0.3rem;
+  justify-content: space-between; 
 }
 
-#main-id {
+.toggle-button{
   display: flex;
-  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
+  flex-basis: 12rem;
+  flex-grow: 0;
+  flex-shrink: 0;
 }
 
-#main-id section {
-  flex-basis: 30em;
-  flex-grow: 1;
-  flex-shrink: 1;
-}
-
-.chap-list :hover{
+.chap-list .row:hover{
   cursor: pointer;
-  background-color: #d12b2b;
+  background-color: #ff4a4a;
 }
 
-#b1,#b2,#b3,#b4,#b5,#b6,#b7,#b8,#b9,#b10,#b11,#b12,#b13,#b14,#b15,#b16,#b17,#b18,#b19,#b20,#b21,#b22,#b23,#b24 {
-  display: none;
+.toggle-button a {
+  display: block;
+  text-align: center;
+  width: 4rem;
+  line-height: 2rem;
+  border: 1px solid rgb(0, 0, 0);
+  border-radius: 0.2rem;
+  background-color: #a11010;
+  color: #ffffff;
 }
 
-
-
+.toggle-button a:hover{
+  cursor: pointer;
+  background-color: #ffffff;
+  color: #000000;
+}
