@@ -15,6 +15,7 @@
 #nav-main {
     gap: 0.5rem;
     margin-top: 0.5rem;
+    overflow: scroll;
 }
 
 ::selection {
@@ -215,29 +216,30 @@ footer {
 
 #nbt1 {
     animation-name: highlight1;
-    animation-duration: 0.3s;
-    animation-delay: 0s;
-  }
-  #nbt2 {
-    animation-name: highlight1;
-    animation-duration: 0.3s;
-    animation-delay: 0.1s;
-  }
-  #nbt3 {
-    animation-name: highlight1;
-    animation-duration: 0.3s;
+    animation-duration: 0.4s;
     animation-delay: 0.2s;
   }
-  #nbt4 {
+#nbt2 {
     animation-name: highlight1;
-    animation-duration: 0.3s;
+    animation-duration: 0.4s;
     animation-delay: 0.3s;
   }
-  #nbt5 {
+#nbt3 {
     animation-name: highlight1;
-    animation-duration: 0.3s;
+    animation-duration: 0.4s;
     animation-delay: 0.4s;
   }
+#nbt4 {
+    animation-name: highlight1;
+    animation-duration: 0.4s;
+    animation-delay: 0.5s;
+  }
+#nbt5 {
+    animation-name: highlight1;
+    animation-duration: 0.4s;
+    animation-delay: 0.6s;
+  }
+  
   
   @keyframes highlight1 {
     from {background-color: #ff4a4a}

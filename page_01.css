@@ -1,5 +1,5 @@
 /* ------------------------------------ MAIN PROPERTIES */
-* {
+{
   font-family: "bahnschrift";
   /* outline: 1px solid; */
   /* margin: 5px; */
@@ -95,28 +95,28 @@
 
 #bt1 {
   animation-name: highlight1;
-  animation-duration: 0.3s;
-  animation-delay: 0s;
+  animation-duration: 0.4s;
+  animation-delay: 0.2s;
 }
 #bt2 {
   animation-name: highlight1;
-  animation-duration: 0.3s;
-  animation-delay: 0.1s;
+  animation-duration: 0.4s;
+  animation-delay: 0.3s;
 }
 #bt3 {
   animation-name: highlight1;
-  animation-duration: 0.3s;
-  animation-delay: 0.2s;
+  animation-duration: 0.4s;
+  animation-delay: 0.4s;
 }
 #bt4 {
   animation-name: highlight1;
-  animation-duration: 0.3s;
-  animation-delay: 0.3s;
+  animation-duration: 0.4s;
+  animation-delay: 0.5s;
 }
 #bt5 {
   animation-name: highlight1;
-  animation-duration: 0.3s;
-  animation-delay: 0.4s;
+  animation-duration: 0.4s;
+  animation-delay: 0.6s;
 }
 
 @keyframes highlight1 {
