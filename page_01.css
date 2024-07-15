@@ -88,3 +88,39 @@
   background-color: #ffffff;
   color: #000000;
 }
+
+/* ---------------------- INTRO ANIMATION ---------------------- */
+/* ---------------------- INTRO ANIMATION ---------------------- */
+/* ---------------------- INTRO ANIMATION ---------------------- */
+
+#bt1 {
+  animation-name: highlight1;
+  animation-duration: 0.3s;
+  animation-delay: 0s;
+}
+#bt2 {
+  animation-name: highlight1;
+  animation-duration: 0.3s;
+  animation-delay: 0.1s;
+}
+#bt3 {
+  animation-name: highlight1;
+  animation-duration: 0.3s;
+  animation-delay: 0.2s;
+}
+#bt4 {
+  animation-name: highlight1;
+  animation-duration: 0.3s;
+  animation-delay: 0.3s;
+}
+#bt5 {
+  animation-name: highlight1;
+  animation-duration: 0.3s;
+  animation-delay: 0.4s;
+}
+
+@keyframes highlight1 {
+  from {background-color: #ff4a4a}
+  to {background-color: #ff4a4a00}
+}
+
