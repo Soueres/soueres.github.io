@@ -1,134 +1,140 @@
 <!DOCTYPE html>
 <html lang="fr">
     <head>
-        <meta charset="utf-8"> 
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.2">
         <title> Physique-Chimie PT </title>
         <link rel="stylesheet" href="page_00.css">
         <link rel="stylesheet" href="page_02.css">
+        <script src="scripts/script_Window_Size.js"></script>
     </head>
 
-    <body class="vstack">
+    <body class="col">
 
-        <header class="hstack jst_st">
+        <div id="top_info"> This text will be replaced by the script output </div>
 
-            <a id="left_header" href="index.html"> <img id="logo" src="images_01/Logo_LW.png" /> </a>
-            
-            <div class="vstack jst_st" id="right_header">
-                <div class="hstack wrap aln_bas">
-                    <h1> PHYSIQUE-CHIMIE, PT </h1>
-                    <a href="https://prepas.org/index.php?document=96"> (lien vers le programme officiel) </a>
+        <header class="row nowrap" id="header-id">
+            <div class="col" id="logo-box">
+                <a href="index.html"> 
+                    <img id="logo" src="images_01/Logo_LW.png" />
+                </a>
+            </div>
+            <div class="col" id="title-box">
+                <div class="row baseline">
+                    <h1 class="col nowrap-text" id="page-title"> PHYSIQUE-CHIMIE, PT </h1>
+                    <a class="col nowrap-text" href="https://prepas.org/index.php?document=96"> (lien vers le programme officiel) </a>
                 </div>
 
-                <div class="hstack wrap aln_bas">
-                    <h2> Lycée Langevin-Wallon </h2>
-                    <a href="https://www.lycee-langevin-wallon.com/">  (lien vers le site du lycée) </a>
+                <div class="row baseline">
+                    <h2 class="col nowrap-text" id="page-subtitle"> Lycée Langevin-Wallon </h2>
+                    <a class="col nowrap-text" href="https://www.lycee-langevin-wallon.com/"> (lien vers le site du lycée) </a>
                 </div>
 
-                <div>
-                    <h4> <a href="https://fr.linkedin.com/in/bertrand-soueres"> Bertrand Souères </a> </h4>
+                <div class="row">
+                    <a class="nowrap-text" href="https://fr.linkedin.com/in/bertrand-soueres"> Bertrand Souères </a>
                 </div>
             </div>
         </header>
 
-        <div class="hstack" id="nav-main">
-            <nav id="navigation-panel" class="vstack">
-                <a class="button n01" href="page_01.html"> Cours / TDs </a>
-                <a class="button n02" href="page_02.html"> TPs / TIPE </a>
-                <a class="button n03" href="page_03.html"> Evaluations </a>
-                <a class="button n04" href="page_04.html"> Info. concours </a>
-                <a class="button n05" href="page_05.html"> Logiciels </a>
+        <div class="row" id="nav-main">
+            <nav class="col" id="nav-id">
+                <a class="row nav-button b01" href="page_01.html"> Cours / TDs </a>
+                <a class="row nav-button b02" href="page_02.html"> TPs / TIPE </a>
+                <a class="row nav-button b03" href="page_03.html"> Evaluations </a>
+                <a class="row nav-button b04" href="page_04.html"> Info. concours </a>
+                <a class="row nav-button b05" href="page_05.html"> Logiciels </a>
             </nav>
 
-            <main class="vstack">
+            <main class="col" id="main-id">
 
-                <section class="hstack">
+                <section class="row nowrap">
                     <div class="vtext"> 
                         TPs
                     </div>
                     
-                    <div class="vstack">
+                    <div class="col TP-list">
 
-                        <div class="TP-name hstack jst_btw aln_ctr">
+                        <div class="TP-name row">
                             <div> Refroidissement par convection - Mesure d'échanges thermiques </div>
                             <a href="TP_01/TP_01_Refroidissement_Convection.pdf"> Télécharger </a>
                         </div>
                         
-                        <div class="TP-name hstack jst_btw aln_ctr">
+                        <div class="TP-name row">
                             <div> Dilatation thermique de l'eau - Mesure du coefficient de dilatation thermique </div>
                             <a href="TP_01/TP_02_Dilatation_Thermique_Eau.pdf"> Télécharger </a>
                         </div>
 
-                        <div class="TP-name hstack jst_btw aln_ctr">
+                        <div class="TP-name row">
                             <div> Enthalpie de réaction chimique - Mesure d'une enthalpie de réaction chimique </div>
                             <a href="TP_01/TP_03_Enthalpie_Reaction.pdf"> Télécharger </a>
                         </div>
 
-                        <div class="TP-name hstack jst_btw aln_ctr">
+                        <div class="TP-name row">
                             <div> Loi de pression hydrostatique - Accord expérimental </div>
                             <a href="TP_01/TP_05_Pression_Hydrostatique.pdf"> Télécharger </a>
                         </div>
 
-                        <div class="TP-name hstack jst_btw aln_ctr">
+                        <div class="TP-name row">
                             <div> Pendule simple - Calcul et propagation des incertitudes </div>
                             <a> Télécharger </a>
                         </div>
 
-                        <div class="TP-name hstack jst_btw aln_ctr">
+                        <div class="TP-name row">
                             <div> Déplacement dans un fluide visqueux - Mesure de la viscosité du glycérol </div>
                             <a> Télécharger </a>
                         </div>
 
-                        <div class="TP-name hstack jst_btw aln_ctr">
-                            <div> Vidange de Torricelli et pertes de charge - Mesure d'un coefficient de pertes de charge </div>
+                        <div class="TP-name row">
+                            <div> Vidange de Torricelli et mesure d'un coefficient de pertes de charge </div>
                             <a> Télécharger </a>
                         </div>
 
-                        <div class="TP-name hstack jst_btw aln_ctr">
+                        <div class="TP-name row">
                             <div> Étude d'un cycle frigorifique avec le logiciel coolpack </div>
                             <a> Télécharger </a>
                         </div>
 
-                        <div class="TP-name hstack jst_btw aln_ctr">
+                        <div class="TP-name row">
                             <div> Filtrage passif - Détermination d'un diagramme de Bode </div>
                             <a> Télécharger </a>
                         </div>
 
-                        <div class="TP-name hstack jst_btw aln_ctr">
+                        <div class="TP-name row">
                             <div> Filtres à ALI - Étude expérimentale de montages simples </div>
                             <a> Télécharger </a>
                         </div>
 
-                        <div class="TP-name hstack jst_btw aln_ctr">
+                        <div class="TP-name row">
                             <div> Filtres à ALI - Étude expérimentale du montage intégrateur HF </div>
                             <a> Télécharger </a>
                         </div>
 
-                        <div class="TP-name hstack jst_btw aln_ctr">
+                        <div class="TP-name row">
                             <div> Oscillateur quasi-sinusoidal - Étude d'un oscillateur de Wien </div>
                             <a> Télécharger </a>
                         </div>
 
-                        <div class="TP-name hstack jst_btw aln_ctr">
+                        <div class="TP-name row">
                             <div> Oscillateur à relaxation - Étude d'un oscillateur à décharge </div>
                             <a> Télécharger </a>
                         </div>
 
-                        <div class="TP-name hstack jst_btw aln_ctr">
+                        <div class="TP-name row">
                             <div> Diffraction et expérience des fentes d'Young - Caractéristiques des franges</div>
                             <a> Télécharger </a>
                         </div>
 
-                        <div class="TP-name hstack jst_btw aln_ctr">
+                        <div class="TP-name row">
                             <div> Spectromètre à réseau - Identification de spectres </div>
                             <a> Télécharger </a>
                         </div>
 
-                        <div class="TP-name hstack jst_btw aln_ctr">
+                        <div class="TP-name row">
                             <div> Utilisation du Michelson en lame d'air </div>
                             <a> Télécharger </a>
                         </div>
 
-                        <div class="TP-name hstack jst_btw aln_ctr">
+                        <div class="TP-name row">
                             <div> Utilisation du Michelson en coin d'air </div>
                             <a> Télécharger </a>
                         </div>
@@ -136,37 +142,37 @@
                     </div>
                 </section>
 
-                <section class="hstack">
+                <section class="row nowrap">
                     <div class="vtext"> 
                         TIPE
                     </div>
-            
-                    <div class="vstack" id="TIPE-links">
+                    
+                    <div class="col TIPE-list">
                         <div id="TIPE-text">
                             <b>Description du <em>Bulletin officiel de l'éducation nationale</em></b> : Le travail de l'étudiant en TIPE doit être centré sur une véritable démarche de recherche scientifique et technologique réalisée de façon concrète.
                             L'analyse du réel, de faits, de processus, d'objets, etc., doit permettre de dégager une problématique en relation explicite avec le thème proposé.
                             La recherche d'explications comprend une investigation mettant en œuvre des outils et méthodes auxquels on recourt classiquement dans tout travail 
                             de recherche scientifique (observations, réalisation pratique d'expériences, modélisations, formulation d'hypothèses, simulations, validation ou 
                             invalidation de modèles par comparaison au réel, etc.) Cela doit amener l'étudiant à découvrir par lui-même, sans ambition excessive, mais en 
-                            sollicitant, ses capacités d'invention et d'initiative.
+                            sollicitant ses capacités d'invention et d'initiative.
                         </div>
 
-                        <div class="TP-name hstack jst_btw aln_ctr">
+                        <div class="TP-name row">
                             <div> Page "TIPE" du site <em>SCEI-concours.fr</em> : </div>
                             <a href="https://www.scei-concours.fr/tipe.php"> Lien vers le site </a>
                         </div>
                         
-                        <div class="TP-name hstack jst_btw aln_ctr">
+                        <div class="TP-name row">
                             <div> Document "Attendus pédagogiques" du site <em>SCEI-concours.fr</em> : </div>
                             <a href="https://www.scei-concours.fr/pdf/AttendusPedagogiques_2023-decembre.pdf"> Lien vers le site </a>
                         </div>
 
-                        <div class="TP-name hstack jst_btw aln_ctr">
+                        <div class="TP-name row">
                             <div> Page de méthodologie et d'aide à la définition du sujet du site <em>sciencesindustrielles.com</em> : </div>
                             <a href="https://sciencesindustrielles.com/projets/tipe/"> Lien vers le site </a>
                         </div>
 
-                        <div class="TP-name hstack jst_btw aln_ctr">
+                        <div class="TP-name row">
                             <div> Page "ressources TIPE" du site <em>prepa.org</em> :  </div>
                             <a href="https://prepas.org/index.php?rubrique=35"> Lien vers le site </a>
                         </div>
@@ -178,10 +184,9 @@
 
         </div>
 
-        <footer class="itm_st">
-            Bertrand SOUERES - 2023 - bbbbbbbb@gmail.com
+        <footer>
+            Bertrand SOUERES - 2024 - bbbbbbbb@gmail.com
         </footer>
-
 
     </body>
 

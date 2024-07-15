@@ -15,7 +15,6 @@
 #nav-main {
     gap: 0.5rem;
     margin-top: 0.5rem;
-    overflow: scroll;
 }
 
 ::selection {
@@ -25,9 +24,9 @@
   
 body {
     background-image: url("images_01/bkg_094.jpg");
-    background-repeat: no-repeat;
+    /* background-repeat: no-repeat;
     background-attachment: fixed;
-    background-size: cover;
+    background-size: cover; */
     max-width: 1200px;
 }
 
