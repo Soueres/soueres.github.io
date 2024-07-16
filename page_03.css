@@ -1,17 +1,14 @@
 /* ------------------------------------ STATIC PROPERTIES */
 
-#navigation-panel .n03 {
+#nav-id .b03 {
   background: #a11010;
   color: #ffffff;
 }
 
-section {
-  padding: 0.5rem;
+#main-id {
   gap: 0.5rem;
-}
-
-section .vstack {
-  gap: 0.2rem;
+  display: flex;
+  flex-wrap: wrap;
 }
 
 .vtext {
@@ -21,43 +18,57 @@ section .vstack {
   padding: 0.4rem;
   background: #8b1313;
   color: rgb(255, 244, 244);
-  border: 2px solid rgb(0, 0, 0);
+  border: 1px solid rgb(0, 0, 0);
 }
+
 
 /* ------------------------------------ DROPDOWN MENU -----------------------------------*/
+section {
+  flex-basis: 100%;
+}
 
-/* dd container */
-.dropdown {
+#planning-DS {
   display: flex;
-  position: relative;
+  flex-wrap: nowrap;
 }
 
-/* Name of the TP */
-.TP-name {
-  gap: 2rem;
-  padding: 0.2rem;
-  padding-left: 0.5rem;
-  color: white;
-  background-color: #8b131383;
-  border: 2px solid rgb(0, 0, 0);
-  /* white-space: nowrap; */
+.TP-list {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  flex-basis: 100%;
+  gap: 0.3em;
 }
 
-/* Button at the right */
+.TP-list .row {
+  display: flex;
+  flex-wrap: nowrap;
+  flex-basis: 30rem;
+  justify-content: left;
+  align-items: center;
+  padding: 0.3rem;
+  justify-content: space-between; 
+  border: 1px solid rgb(0, 0, 0);
+  margin-left: 0.5rem;
+}
+
+.col .TP-name {
+  flex-basis: 20rem;
+  flex-shrink: 1;
+  flex-grow: 1;
+}
+
+/* Buttons at the right */
 .TP-name a {
-  padding: 0.1rem;
+  padding: 0.2rem;
   color: white;
-  background-color: #8b131383;
-  border: 2px solid rgb(0, 0, 0);
+  background-color: #a72121;
+  border: 1px solid rgb(0, 0, 0);
+  border-radius: 0.2rem;
+}
+
+.TP-name a:hover {
+  background-color: #ffffff;
+  color: rgb(0, 0, 0);
   cursor: pointer;
-  white-space: nowrap;
 }
-
-.TP-name a:hover {background-color: #bd4040;}
-
-/* ------------------------------------ GRID INTERRO -----------------------------------*/
-
-#interro_list {
-  gap: 0.5rem;
-}
-
