@@ -25,49 +25,41 @@
 /* ------------------------------------ DROPDOWN MENU -----------------------------------*/
 section {
   flex-basis: 100%;
+  gap: 0.5em;
 }
 
-#planning-DS {
-  display: flex;
-  flex-wrap: nowrap;
-}
-
-.TP-list {
+.item-list {
   display: flex;
   flex-wrap: wrap;
   flex-direction: row;
   flex-basis: 100%;
-  gap: 0.3em;
+  gap: 0.5rem;
 }
 
-.TP-list .row {
+.item-list .item {
   display: flex;
-  flex-wrap: nowrap;
-  flex-basis: 30rem;
-  justify-content: left;
-  align-items: center;
-  padding: 0.3rem;
-  justify-content: space-between; 
-  border: 1px solid rgb(0, 0, 0);
-  margin-left: 0.5rem;
-}
-
-.col .TP-name {
   flex-basis: 20rem;
   flex-shrink: 1;
   flex-grow: 1;
+  flex-wrap: nowrap;
+  justify-content: left;
+  align-items: center;
+  padding: 0.5rem;
+  justify-content: space-between; 
+  border: 1px solid rgb(0, 0, 0);
 }
 
 /* Buttons at the right */
-.TP-name a {
+.item a {
   padding: 0.2rem;
+  margin-left: 0.5rem;
   color: white;
   background-color: #a72121;
   border: 1px solid rgb(0, 0, 0);
   border-radius: 0.2rem;
 }
 
-.TP-name a:hover {
+.item a:hover {
   background-color: #ffffff;
   color: rgb(0, 0, 0);
   cursor: pointer;

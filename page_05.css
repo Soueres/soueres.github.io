@@ -1,63 +1,26 @@
-/* ------------------------------------ STATIC PROPERTIES */
-
-main {
-  gap: 0.8rem;
-  border-radius: 0em 0em 0em 0em;
+/* ------------------------------------ MAIN PROPERTIES */
+* {
+  font-family: "bahnschrift";
+  /* outline: 1px solid; */
+  /* margin: 5px; */
 }
 
-#navigation-panel .n05 {
+#nav-id .b05 {
   background: #a11010;
   color: #ffffff;
 }
 
-section {
-  padding: 0.5rem;
+/* ------------------------------------ CHAPTER LISTS -----------------------------------*/
+
+#main-id {
+  display: flex;
+  flex-wrap: wrap;
   gap: 0.5rem;
 }
 
-section .vstack {
-  gap: 0.2rem;
+section {
+  flex-basis: 25em;
+  flex-grow: 1;
+  flex-shrink: 1;
+  gap: 0.5rem;
 }
-
-.vtext {
-  writing-mode: sideways-lr;
-  text-orientation: sideways;
-  text-align: center;
-  padding: 0.4rem;
-  background: #8b1313;
-  color: rgb(255, 244, 244);
-  border: 2px solid rgb(0, 0, 0);
-}
-
-p {
-  margin: 0rem;
-}
-
-p a {
-  text-decoration: underline;
-  text-decoration-thickness: 0.1em;
-}
-
-/* ------------------------------------ DROPDOWN MENU -----------------------------------*/
-
-/* dd container */
-.dropdown {
-  display: flex;
-  position: relative;
-}
-  
-  /* button */
-.dropbtn {
-  display: inline-block;
-  width: 30rem;
-  padding: 0.2rem;
-  padding-left: 0.5rem;
-  color: white;
-  background-color: #8b131383;
-  border: 2px solid rgb(0, 0, 0);
-  cursor: pointer;
-  transition: 0.1s ease-out;
-  white-space: nowrap;
-}
-  
-  

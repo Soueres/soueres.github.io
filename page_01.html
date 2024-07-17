@@ -9,34 +9,34 @@
         <script src="scripts/script_Window_Size.js"></script>
     </head>
 
-    <body class="col">
+    <body >
         <div id="top_info"> This text will be replaced by the script output </div>
 
         <header class="row nowrap" id="header-id">
-            <div class="col" id="logo-box">
+            <div id="logo-box">
                 <a href="index.html"> 
                     <img id="logo" src="images_01/Logo_LW.png" />
                 </a>
             </div>
-            <div class="col" id="title-box">
-                <div class="row baseline">
-                    <h1 class="col nowrap-text" id="page-title"> PHYSIQUE-CHIMIE, PT </h1>
-                    <a class="col nowrap-text" href="https://prepas.org/index.php?document=96"> (lien vers le programme officiel) </a>
-                </div>
-
-                <div class="row baseline">
-                    <h2 class="col nowrap-text" id="page-subtitle"> Lycée Langevin-Wallon </h2>
-                    <a class="col nowrap-text" href="https://www.lycee-langevin-wallon.com/"> (lien vers le site du lycée) </a>
+            <div id="title-box">
+                <div class="row">
+                    <h1 class="nowrap-text" id="page-title"> PHYSIQUE-CHIMIE, PT </h1>
+                    <a class="nowrap-text text-link" href="https://prepas.org/index.php?document=96"> (lien vers le programme officiel) </a>
                 </div>
 
                 <div class="row">
-                    <a class="nowrap-text" href="https://fr.linkedin.com/in/bertrand-soueres"> Bertrand Souères </a>
+                    <h2 class="nowrap-text" id="page-subtitle"> Lycée Langevin-Wallon </h2>
+                    <a class="nowrap-text text-link" href="https://www.lycee-langevin-wallon.com/"> (lien vers le site du lycée) </a>
+                </div>
+
+                <div class="row">
+                    <a class="nowrap-text text-link" href="https://fr.linkedin.com/in/bertrand-soueres"> Bertrand Souères </a>
                 </div>
             </div>
         </header>
 
         <div class="row" id="nav-main">
-            <nav class="col" id="nav-id">
+            <nav id="nav-id">
                 <a class="row nav-button b01" href="page_01.html"> Cours / TDs </a>
                 <a class="row nav-button b02" href="page_02.html"> TPs / TIPE </a>
                 <a class="row nav-button b03" href="page_03.html"> Evaluations </a>
@@ -44,16 +44,16 @@
                 <a class="row nav-button b05" href="page_05.html"> Logiciels </a>
             </nav>
 
-            <main class="col" id="main-id">
+            <main id="main-id">
 
                 <section class="row nowrap">
-                    <div class="col vtext"> 
+                    <div class="vtext"> 
                         THERMODYNAMIQUE
                     </div>
             
-                    <div class="col chap-list">
+                    <div class="chap-list">
                         <div class="row" id="bt1">
-                            <div> Thermodynamique différentielle </div>
+                            <div class="chap-item"> Thermodynamique différentielle </div>
                             <div class="toggle-button" style="visibility: hidden;">
                                 <a href="#">Bilan</a>
                                 <a href="cours_01/Thermodynamique_01_Transformations_Infinitesimales_Eleve.pdf">Cours</a>
@@ -61,7 +61,7 @@
                             </div>
                         </div>
                         <div class="row" id="bt2">
-                            <div> Identités thermodynamiques </div>
+                            <div class="chap-item"> Identités thermodynamiques </div>
                             <div class="toggle-button" style="visibility: hidden;">
                                 <a href="#">Bilan</a>
                                 <a href="cours_01/Thermodynamique_01_Transformations_Infinitesimales_Eleve.pdf">Cours</a>
@@ -69,7 +69,7 @@
                             </div>
                         </div>
                         <div class="row" id="bt3">
-                            <div> Transformation des fluides réels </div>
+                            <div class="chap-item"> Transformation des fluides réels </div>
                             <div class="toggle-button" style="visibility: hidden;">
                                 <a href="#">Bilan</a>
                                 <a href="cours_01/Thermodynamique_01_Transformations_Infinitesimales_Eleve.pdf">Cours</a>
@@ -77,7 +77,7 @@
                             </div>
                         </div>
                         <div class="row" id="bt4">
-                            <div> Diffusion thermique </div>
+                            <div class="chap-item"> Diffusion thermique </div>
                             <div class="toggle-button" style="visibility: hidden;">
                                 <a href="#">Bilan</a>
                                 <a href="cours_01/Thermodynamique_01_Transformations_Infinitesimales_Eleve.pdf">Cours</a>
@@ -85,7 +85,7 @@
                             </div>
                         </div>
                         <div class="row" id="bt5">
-                            <div> Thermodynamique industrielle </div>
+                            <div class="chap-item"> Thermodynamique industrielle </div>
                             <div class="toggle-button" style="visibility: hidden;">
                                 <a href="#">Bilan</a>
                                 <a href="cours_01/Thermodynamique_01_Transformations_Infinitesimales_Eleve.pdf">Cours</a>
@@ -96,11 +96,11 @@
                 </section>
         
                 <section class="row nowrap">
-                    <div class="col vtext"> 
+                    <div class="vtext"> 
                         THERMOCHIMIE
                     </div>
             
-                    <div class="col chap-list">
+                    <div class="chap-list">
                         <div class="row" id="bt6">
                             <div> Premier principe appliqué à la transformation chimique </div>
                             <div class="toggle-button" style="visibility: hidden;">
@@ -121,11 +121,11 @@
                 </section>
 
                 <section class="row nowrap">
-                    <div class="col vtext"> 
+                    <div class="vtext"> 
                         MÉCA. FLUIDES
                     </div>
             
-                    <div class="col chap-list">
+                    <div class="chap-list">
                         <div class="row" id="bt8">
                             <div> Statique des fluides </div>
                             <div class="toggle-button" style="visibility: hidden;">
@@ -146,11 +146,11 @@
                 </section>
 
                 <section class="row nowrap">
-                    <div class="col vtext"> 
+                    <div class="vtext"> 
                         ÉLECTROMAGNÉTISME
                     </div>
             
-                    <div class="col chap-list">
+                    <div class="chap-list">
                         <div class="row" id="bt10">
                             <div> Électrostatique et distributions de charges </div>
                             <div class="toggle-button" style="visibility: hidden;">
@@ -195,11 +195,11 @@
                 </section>
 
                 <section class="row nowrap">
-                    <div class="col vtext"> 
+                    <div class="vtext"> 
                         ÉLECTROCINÉTIQUE
                     </div>
             
-                    <div class="col chap-list">
+                    <div class="chap-list">
                         <div class="row" id="bt15">
                             <div> Rappels de PTSI (et stabilité des systèmes linéaires) </div>
                             <div class="toggle-button" style="visibility: hidden;">
@@ -236,11 +236,11 @@
                 </section>
 
                 <section class="row nowrap">
-                    <div class="col vtext"> 
+                    <div class="vtext"> 
                         OPTIQUE ONDULATOIRE
                     </div>
             
-                    <div class="col chap-list">
+                    <div class="chap-list">
                         <div class="row" id="bt19">
                             <div> Modèle scalaire de rayonnement lumineux </div>
                             <div class="toggle-button" style="visibility: hidden;">
@@ -269,11 +269,11 @@
                 </section>
 
                 <section class="row nowrap">
-                    <div class="col vtext"> 
+                    <div class="vtext"> 
                         ÉLECTROCHIMIE
                     </div>
             
-                    <div class="col chap-list">
+                    <div class="chap-list">
                         <div class="row" id="bt22">
                             <div> Cinétique électrochimique </div>
                             <div class="toggle-button" style="visibility: hidden;">

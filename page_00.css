@@ -35,13 +35,30 @@ body {
 /* ------------------------ SMALL CLASSES --------------------- */
 
 .nowrap {flex-wrap: nowrap;}
-.baseline {align-items: baseline;}
+
+#title-box .row {
+    align-items: baseline;
+}
 
 .nowrap-text {
     white-space: nowrap;
     overflow: hidden;
 }
 
+.vtext {
+    writing-mode: sideways-lr;
+    text-orientation: sideways;
+    text-align: center;
+    padding: 0.4rem;
+    background: #8b1313;
+    color: rgb(255, 244, 244);
+    border: 1px solid rgb(0, 0, 0);
+  }
+
+  .text-link {
+    color: #910000;
+    text-decoration: underline;
+  }
 
 /* --------------- CRITICAL CLASSES (WITH FLEX PARAMETERS) --------------- */
 /* --------------- CRITICAL CLASSES (WITH FLEX PARAMETERS) --------------- */

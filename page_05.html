@@ -2,63 +2,69 @@
 <html lang="fr">
     <head>
         <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.2">
         <title> Physique-Chimie PT </title>
         <link rel="stylesheet" href="page_00.css">
         <link rel="stylesheet" href="page_05.css">
+        <script src="scripts/script_Window_Size.js"></script>
     </head>
 
-    <body class="vstack">
-        <header class="hstack jst_st">
+    <body >
+        <div id="top_info"> This text will be replaced by the script output </div>
 
-            <a id="left_header" href="index.html"> <img id="logo" src="images_01/Logo_LW.png" /> </a>
-            
-            <div class="vstack jst_st" id="right_header">
-                <div class="hstack wrap aln_bas">
-                    <h1> PHYSIQUE-CHIMIE, PT </h1>
-                    <a href="https://prepas.org/index.php?document=96"> (lien vers le programme officiel) </a>
+        <header class="row nowrap" id="header-id">
+            <div id="logo-box">
+                <a href="index.html"> 
+                    <img id="logo" src="images_01/Logo_LW.png" />
+                </a>
+            </div>
+            <div id="title-box">
+                <div class="row">
+                    <h1 class="nowrap-text" id="page-title"> PHYSIQUE-CHIMIE, PT </h1>
+                    <a class="nowrap-text text-link" href="https://prepas.org/index.php?document=96"> (lien vers le programme officiel) </a>
                 </div>
 
-                <div class="hstack wrap aln_bas">
-                    <h2> Lycée Langevin-Wallon </h2>
-                    <a href="https://www.lycee-langevin-wallon.com/"> (lien vers le site du lycée) </a>
+                <div class="row">
+                    <h2 class="nowrap-text" id="page-subtitle"> Lycée Langevin-Wallon </h2>
+                    <a class="nowrap-text text-link" href="https://www.lycee-langevin-wallon.com/"> (lien vers le site du lycée) </a>
                 </div>
 
-                <div>
-                    <h4> <a href="https://fr.linkedin.com/in/bertrand-soueres"> Bertrand Souères </a> </h4>
+                <div class="row">
+                    <a class="nowrap-text text-link" href="https://fr.linkedin.com/in/bertrand-soueres"> Bertrand Souères </a>
                 </div>
             </div>
         </header>
 
-        <div class="hstack" id="nav-main">
-            <nav id="navigation-panel" class="vstack">
-                <a class="button n01" href="page_01.html"> Cours / TDs </a>
-                <a class="button n02" href="page_02.html"> TPs / TIPE </a>
-                <a class="button n03" href="page_03.html"> Evaluations </a>
-                <a class="button n04" href="page_04.html"> Info. concours </a>
-                <a class="button n05" href="page_05.html"> Logiciels </a>
+        <div class="row" id="nav-main">
+            <nav id="nav-id">
+                <a class="row nav-button b01" href="page_01.html"> Cours / TDs </a>
+                <a class="row nav-button b02" href="page_02.html"> TPs / TIPE </a>
+                <a class="row nav-button b03" href="page_03.html"> Evaluations </a>
+                <a class="row nav-button b04" href="page_04.html"> Info. concours </a>
+                <a class="row nav-button b05" href="page_05.html"> Logiciels </a>
             </nav>
 
-            <main class="vstack">
-                <section class="hstack">
+            <main id="main-id">
+                <section class="row nowrap">
                     <div class="vtext"> 
                         REGRESSI
                     </div>
                     <p>
-                        Le logiciel <a href="https://regressi.fr/WordPress/download/">Regressi</a> est un outil simple et complet de représentation et de manipulation
+                        Le logiciel <a class="text-link" href="https://regressi.fr/WordPress/download/">Regressi</a> est un outil simple et complet de représentation et de manipulation
                         de données expérimentales. Il permet de tracer des points de mesures, d'afficher des barres d'erreurs, 
                         et de définir des modélisations simples des courbes tracées.<br><br>
                         
-                        Remarque : avec Python, c'est le logiciel le plus utile en TP ou en TIPE (notamment, il doit être préféré au tableur Excel)
+                        Remarque : avec Python, c'est le logiciel le plus utile en TP ou en TIPE (notamment, il doit être préféré aux tableurs Excel et LibreOffice)
                     </p>
                 </section>
         
-                <section class="hstack">
+                <section class="row nowrap">
                     <div class="vtext"> 
                         PYTHON
                     </div>
                     <p>
                         Pour faire fonctionner des programmes python, l'une des nombreuses manières est de télécharger <a href="https://www.anaconda.com/download">Anaconda</a>. 
-                        Une fois installé, il est alors possible de lancer Spyder et d'exécuter des codes Python.<br><br>
+                        Une fois installé, il est alors possible de lancer l'IDE Spyder et d'exécuter des codes Python.<br><br>
 
                         Attention :
                         Par défaut, Spyder affiche les graphes dans la console, ce qui limite certaines fonctionnalités d'interaction (zoom, déplacement, etc.) 
@@ -67,7 +73,7 @@
                     </p>
                 </section>
 
-                <section class="hstack">
+                <section class="row nowrap">
                     <div class="vtext"> 
                         GEOGEBRA
                     </div>

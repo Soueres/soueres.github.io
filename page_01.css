@@ -1,5 +1,5 @@
 /* ------------------------------------ MAIN PROPERTIES */
-{
+* {
   font-family: "bahnschrift";
   /* outline: 1px solid; */
   /* margin: 5px; */
@@ -12,26 +12,17 @@
 
 /* ------------------------------------ CHAPTER LISTS -----------------------------------*/
 
-.vtext {
-  writing-mode: sideways-lr;
-  text-orientation: sideways;
-  text-align: center;
-  padding: 0.4rem;
-  background: #8b1313;
-  color: rgb(255, 244, 244);
-  border: 1px solid rgb(0, 0, 0);
-}
-
 #main-id {
   display: flex;
   flex-wrap: wrap;
   gap: 0.5rem;
 }
 
-#main-id section {
-  flex-basis: 30em;
+section {
+  flex-basis: 25em;
   flex-grow: 1;
   flex-shrink: 1;
+  gap: 0.5rem;
 }
 
 .chap-list {
@@ -39,23 +30,32 @@
   flex-wrap: wrap;
   flex-direction: row;
   flex-basis: 100%;
-  gap: 0.3em;
-}
-
-.chap-list .row {
-  border: 1px solid rgb(0, 0, 0);
-  margin-left: 0.5rem;
+  gap: 0.5em;
 }
 
 .chap-list .row {
   display: flex;
   justify-content: left;
   align-items: center;
+  flex-wrap: wrap;
   flex-basis: 100%;
-  padding: 0.3rem;
-  gap: 0.3rem;
-  justify-content: space-between; 
+  padding: 0.3rem 0.5rem 0.3rem 0.5rem;
+  gap: 0.5rem;
+  justify-content: space-between;
+  border: 1px solid rgb(0, 0, 0);
 }
+
+/* .chap-item {
+  white-space: nowrap;
+  flex-shrink: 1;
+  flex-grow: 1;
+  flex-basis: 7rem;
+  overflow: hidden;
+} */
+
+/* ------------------------------------ ABOUT TOGGLE BUTTONS -----------------------------------*/
+/* ------------------------------------ ABOUT TOGGLE BUTTONS -----------------------------------*/
+/* ------------------------------------ ABOUT TOGGLE BUTTONS -----------------------------------*/
 
 .toggle-button{
   display: flex;
