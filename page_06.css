@@ -1,26 +1,28 @@
 /* ------------------------------------ MAIN PROPERTIES */
-* {
+{
   font-family: "bahnschrift";
   /* outline: 1px solid; */
   /* margin: 5px; */
 }
 
-#nav-id .b04 {
+#nav-id .b06 {
   background: #a11010;
   color: #ffffff;
 }
 
-/* ------------------------------------ CHAPTER LISTS -----------------------------------*/
-
 #main-id {
+  gap: 0.5rem;
   display: flex;
   flex-wrap: wrap;
-  gap: 0.5rem;
 }
 
+/* ------------------------------------ DROPDOWN MENU -----------------------------------*/
+
 section {
-  flex-basis: 100%;
-  gap: 0.5em;
+  flex-basis: 25em;
+  flex-grow: 1;
+  flex-shrink: 1;
+  gap: 0.5rem;
 }
 
 .item-list {
@@ -28,34 +30,34 @@ section {
   flex-wrap: wrap;
   flex-direction: row;
   flex-basis: 100%;
-  gap: 0.5rem;
+  gap: 0.5em;
 }
 
-.item-list .item {
+.item-list .row {
   display: flex;
   flex-basis: 100%;
+  flex-wrap: nowrap;
   justify-content: left;
   align-items: center;
-  padding: 0.5rem;
   justify-content: space-between; 
   border: 1px solid rgb(0, 0, 0);
+  padding: 0.5rem;
+  gap: 1rem;
 }
 
-.item {
-  gap: 0.5rem;
-  flex-wrap: wrap;
+#TIPE-text {
+  text-align: justify;
+  margin-left: 0.5rem;
 }
 
 /* Buttons at the right */
 .item a {
   padding: 0.2rem;
-  margin-left: 0.5rem;
   color: white;
   background-color: #a72121;
   border: 1px solid rgb(0, 0, 0);
   border-radius: 0.2rem;
   white-space: nowrap;
-  align-self: flex-end;
 }
 
 .item a:hover {

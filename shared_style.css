@@ -1,0 +1,26 @@
+/* ------------------------------------ MAIN PROPERTIES */
+* {
+  font-family: "bahnschrift";
+  /* outline: 1px solid; */
+  /* margin: 5px; */
+}
+
+#nav-id .b05 {
+  background: #a11010;
+  color: #ffffff;
+}
+
+/* ------------------------------------ CHAPTER LISTS -----------------------------------*/
+
+#main-id {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+}
+
+section {
+  flex-basis: 25em;
+  flex-grow: 1;
+  flex-shrink: 1;
+  gap: 0.5rem;
+}
