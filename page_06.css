@@ -19,7 +19,8 @@
 /* ------------------------------------ DROPDOWN MENU -----------------------------------*/
 
 section {
-  flex-basis: 25em;
+  /* flex-basis: 25em; */
+  flex-basis: 100%;
   flex-grow: 1;
   flex-shrink: 1;
   gap: 0.5rem;
