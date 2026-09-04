@@ -31,6 +31,20 @@ section {
   gap: 0.5rem;
 }
 
+
+/* Line taken from page_02.css */
+.item-list .row {
+  display: flex;
+  flex-basis: 100%;
+  flex-wrap: nowrap;
+  justify-content: left;
+  align-items: center;
+  padding: 0.3rem;
+  justify-content: space-between; 
+  border: 1px solid rgb(0, 0, 0);
+  margin-left: 0.5rem;
+}
+
 .item-list .item {
   display: flex;
   flex-basis: 100%;
