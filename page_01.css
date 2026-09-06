@@ -67,6 +67,11 @@ section {
   margin-left: 0.5rem;
 }
 
+#long-text {
+  text-align: justify;
+  margin-left: 0.5rem;
+}
+
 /* Buttons at the right */
 .item a {
   padding: 0.2rem;
