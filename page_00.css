@@ -104,7 +104,7 @@ main {
     }
     nav {
         /* the navigation panel stays at a fixed width */
-        flex-basis: 9em;
+        flex-basis: 10em;
         flex-grow: 0;
         flex-shrink: 0;
     }
