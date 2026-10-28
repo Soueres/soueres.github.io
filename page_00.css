@@ -190,6 +190,11 @@ p {
     margin-bottom: -0.3em; /* corrects a slight vertical offset due to the link inside the image */
 }
 
+#imageLLW {
+    width: 62.3em;
+    padding: 0.0em 0.0em 0.0em 0.0em;
+}
+
 #nav-id {
     border: 1px solid rgb(0, 0, 0);
     border-radius: 0em 0em 0em 0em;
