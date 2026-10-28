@@ -191,7 +191,8 @@ p {
 }
 
 #imageLLW {
-    width: 62.3em;
+    /* width: 62.3em; */
+    max-width: 100%;
     padding: 0.0em 0.0em 0.0em 0.0em;
 }
 
